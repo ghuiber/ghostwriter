@@ -17,6 +17,7 @@
         {{ if .RSSLink }}
             <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml">
         {{ end }}
+        {{ partial "head_highlightjs" . }}
     </head>
     <body>
         {{ template "_internal/google_analytics.html" . }}
